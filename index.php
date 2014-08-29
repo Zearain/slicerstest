@@ -49,5 +49,13 @@ while ($row = $STH_getlist->fetch()) {
 	<body>
 		<h1>My Shopping List</h1>
 		<?php echo $html_table; ?>
+		<h3>Add New List Item</h3>
+		<form accept-charset="UTF-8">
+			<label for="item_name">Item Name</label>
+			<input name="item_name" type="text" value="Pærer"/>
+			<label for="item_measure">Item Name</label>
+			<input name="item_measure" type="text" value="5 stk."/>
+			<input name="add" type="submit" value="Add Item" />
+		</form>
 	</body>
 </html>
