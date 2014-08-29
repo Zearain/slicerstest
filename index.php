@@ -24,7 +24,7 @@ function connStrToArray($conn_str){
     return $conn_array;
 }
 
-$connstring = getenv("DefaultConnection");
+$connstring = getenv('MYSQLCONNSTR_DefaultConnection');
 $connarray = connStrToArray($connstring);
 
 print_r($connarray);
